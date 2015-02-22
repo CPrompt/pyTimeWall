@@ -11,6 +11,13 @@ import os
 walls = [
 	"9-Late-Night.png","1-Early-Morning.png","2-Morning.png","3-Late-Morning.png","4-Afternoon.png","5-Late-Afternoon.png","6-Evening.png","7-Late-Evening.png","8-Night.png"
 	]
+
+'''
+	Go to this site: http://www.timeanddate.com
+	Find your location
+	Copy the URL and paste
+	Below is my example
+'''
 url = "http://www.timeanddate.com/astronomy/usa/greensboro"
 
 '''-----------------------------------------------------------------------
