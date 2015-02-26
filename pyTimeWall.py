@@ -14,7 +14,7 @@ walls = [
 
 '''
 	Go to this site: http://www.timeanddate.com/astronomy
-	Find your location
+	Enter your location under the "Sun" search location
 	Copy the URL and paste
 	Below is my example
 '''
