@@ -13,7 +13,7 @@ walls = [
 	]
 
 '''
-	Go to this site: http://www.timeanddate.com
+	Go to this site: http://www.timeanddate.com/astronomy
 	Find your location
 	Copy the URL and paste
 	Below is my example
