@@ -78,5 +78,7 @@ for k in range(8,0,-1):
                 #  This is for the xfce DM
 		#os.system('xfconf-query -c xfce4-desktop -p /backdrop/screen0/monitor0/image-path -s %s%s'%(current_path,walls[k]))
 		#os.system('xfconf-query -c xfce4-desktop -p /backdrop/screen0/monitor1/image-path -s %s%s'%(current_path,walls[k]))
+
+                # To use FEH as the source
                 os.system('feh --bg-scale --no-xinerama %s%s'%(current_path,walls[k]))
                 break
