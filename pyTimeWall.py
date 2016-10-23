@@ -28,17 +28,20 @@ url = "http://www.timeanddate.com/astronomy/usa/greensboro"
 current_path = os.path.dirname(os.path.realpath(__file__))
 current_path = current_path + "/"
 #TESTING
-#print "Current path is : %s"%current_path + '\n'
+print ("Current path is : %s"%current_path + '\n')
 
 r = requests.get(url)
 
-soup = BeautifulSoup(r.content)
+soup = BeautifulSoup(r.content,"lxml")
 
 #get the table id lm-key
 g_data = soup.find("table",{"id" : "lm-key"})
 
 #get the td:class=tr rows
 rows = g_data.findAll("td",{"class" : "tr"})
+
+# TESTING
+print(rows)
 
 times = [] #initiate a list to put the time into
 
@@ -50,7 +53,7 @@ for row in rows:
 	times.append(data.rstrip(' '))
 
 #TESTING
-#print times
+print(times)
 
 new_times = []
 for time_format in times:
@@ -72,7 +75,8 @@ for k in range(8,0,-1):
 		#print "The wall would be : %s"%walls[k]
 		#TESTING
 		#print "Setting the wallpaper to : %s"%current_path + walls[k]
-		os.system('xfconf-query -c xfce4-desktop -p /backdrop/screen0/monitor0/image-path -s %s%s'%(current_path,walls[k]))
-		os.system('xfconf-query -c xfce4-desktop -p /backdrop/screen0/monitor1/image-path -s %s%s'%(current_path,walls[k]))
-		break
-
+                #  This is for the xfce DM
+		#os.system('xfconf-query -c xfce4-desktop -p /backdrop/screen0/monitor0/image-path -s %s%s'%(current_path,walls[k]))
+		#os.system('xfconf-query -c xfce4-desktop -p /backdrop/screen0/monitor1/image-path -s %s%s'%(current_path,walls[k]))
+                os.system('feh --bgcenter --noxinerama %s%s'%(current_path,walls[k]))
+                break
