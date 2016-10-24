@@ -19,11 +19,13 @@ scripts are in the same directory.
 	c. Copy that URL and paste it in the pyTimeWall.py file.  An
 	   example URL has been supplied.
 
-2. Edit the TimeWall.sh file
-	a.  Here we need to change the path to the pyTimeWall.py file so that bash calls the file correctly
-	b.  Make the TimeWall.sh file executable (i.e. chmod a+x TimeWall.sh)
+2. Edit the pyTimeWall.py file
+
+	a.  Make the pyTimeWall.py file executable (i.e. chmod a+x pyTimeWall.py)
 
 3. Add to crontab
+
 	a.  Open a terminal and edit cron as : crontab -e
-	b.  Add an entry in cron to call the TimeWall.sh script every hour
+
+	b.  Add an entry in cron to call the pyTimeWall.py script every hour
 		i.e. 0 * * * * /path/to/TimeWall.sh >/dev/null 2&1
