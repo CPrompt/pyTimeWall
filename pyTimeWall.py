@@ -13,8 +13,8 @@ walls = [
 	]
 
 '''
-	Go to this site: http://www.timeanddate.com
-	Find your location
+	Go to this site: http://www.timeanddate.com/astronomy
+	Enter your location under the "Sun" search location
 	Copy the URL and paste
 	Below is my example
 '''
