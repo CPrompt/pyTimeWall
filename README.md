@@ -10,10 +10,8 @@ script are in the same directory.
 1. First you need to get the URL to pull the times for your area.
 
     * Go to : http://www.timeanddate.com
-    *  Click on "Sun & Moon"
-    * In the "Sun" section, type your location.  The site will use
-	   completion to help make sure it can find your information
-	
+    * Click on "Sun & Moon"
+    * In the "Sun" section, type your location.  The site will use completion to help make sure it can find your information
     * Copy that URL and paste it in the pyTimeWall.py file.  An
 	   example URL has been supplied.
 
@@ -24,5 +22,4 @@ script are in the same directory.
 3. Add to crontab
 
     * Open a terminal and edit cron as : crontab -e
-    * Add an entry in cron to call the pyTimeWall.py script every hour
-		i.e. 0 * * * * /path/to/TimeWall.sh >/dev/null 2&1
+    * Add an entry in cron to call the pyTimeWall.py script every hour (i.e. 0 * * * * /path/to/TimeWall.sh >/dev/null 2&1)
