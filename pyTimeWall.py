@@ -49,6 +49,7 @@ times = [] #initiate a list to put the time into
 #parse out the data in each td class="tr"
 for row in rows:
 	data = row.get_text()
+        # Python3 does not like this setting but I had to use it for Python2
 	#data = data.encode("utf-8")
 	data = data[:8]	#this just strips out the first chunck since that's all we need
 	times.append(data.rstrip(' '))
