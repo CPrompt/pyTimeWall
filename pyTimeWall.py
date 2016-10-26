@@ -28,7 +28,7 @@ url = "http://www.timeanddate.com/astronomy/usa/greensboro"
 current_path = os.path.dirname(os.path.realpath(__file__))
 current_path = current_path + "/"
 #TESTING
-print ("Current path is : %s"%current_path + '\n')
+#print ("Current path is : %s"%current_path + '\n')
 
 r = requests.get(url)
 
@@ -40,20 +40,21 @@ g_data = soup.find("table",{"id" : "lm-key"})
 #get the td:class=tr rows
 rows = g_data.findAll("td",{"class" : "tr"})
 
-# TESTING
-print(rows)
+#TESTING
+#print("Rows")
+#print(rows)
 
 times = [] #initiate a list to put the time into
 
 #parse out the data in each td class="tr"
 for row in rows:
 	data = row.get_text()
-	data = data.encode("utf-8")
+	#data = data.encode("utf-8")
 	data = data[:8]	#this just strips out the first chunck since that's all we need
 	times.append(data.rstrip(' '))
 
 #TESTING
-print(times)
+#print(times)
 
 new_times = []
 for time_format in times:
