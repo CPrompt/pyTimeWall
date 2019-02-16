@@ -62,14 +62,14 @@ for time_format in times:
 	newTime = time.strftime("%H:%M", time.strptime(time_format, "%I:%M %p"))
 	new_times.append(newTime)
 #TESTING
-#print new_times
-#print " "
+print(new_times)
+print(" ")
 
 #get todays time
 my_time = time.strftime("%H:%M")
 
 #TESTING
-#print "The Time is now : %s"%my_time + '\n'
+print("The Time is now : %s"%my_time + '\n')
 
 for k in range(8,0,-1):
 	if my_time >= new_times[k]:
@@ -81,6 +81,7 @@ for k in range(8,0,-1):
 		#os.system('xfconf-query -c xfce4-desktop -p /backdrop/screen0/monitor0/image-path -s %s%s'%(current_path,walls[k]))
 		#os.system('xfconf-query -c xfce4-desktop -p /backdrop/screen0/monitor1/image-path -s %s%s'%(current_path,walls[k]))
 
-                # To use FEH as the source
-                os.system('feh --bg-scale --no-xinerama %s%s'%(current_path,walls[k]))
-                break
+        # To use FEH as the source
+		#os.system('feh --bg-scale --no-xinerama %s%s'%(current_path,walls[k]))
+		print(new_times[k])
+		#break
