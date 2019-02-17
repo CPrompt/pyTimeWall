@@ -1,9 +1,11 @@
 # pyTimeWall
 A Wallpaper changer for XFCE using Python, 8-bit wallpapers and Night, Twilight and Daylight times from timeanddate.com
+### NOTE:  I cannot remember where the wallpapers originated.  I didn't create them. If you know or are the original author, please let me know so I can give credit.
 
 #--------------------------------------------------
 		        SETUP	
 #--------------------------------------------------
+
 The script assumes that the wallpapers and both the .py and .sh
 scripts are in the same directory.
 
